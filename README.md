@@ -7,12 +7,12 @@ the First Letters prize. 1,935 cm² of surface in total.
 which ones were looked at and what the verdict was.
 
 They were made with the Vesuvius Challenge team's own tools — the spiral fitter
-and `vc_render_tifxyz` from villa — run over a grid of z windows. Nothing here
-is a new method; what is new is the coverage.
+and `vc_render_tifxyz` from villa — run over a grid of z windows. 
 
-As of 1 September 2026, twelve of the thirteen eligible scrolls have no
-published surface at all in the open data bucket. Only PHerc1447 does, with
-four segments. This is an attempt to close part of that gap.
+Looking through the open data bucket on 1 September 2026, I found published
+surfaces for only one of the thirteen eligible scrolls (PHerc1447, four
+segments). I may well have missed some. If that reading is roughly right, there
+is a gap here, and this is an attempt to fill part of it.
 
 ## What is here
 
@@ -116,8 +116,7 @@ and the settings used, for anyone who wants to run the same route elsewhere.
 
 ## AI assistance
 
-The pipeline scripts, the analysis and the first draft of this text were
-produced with heavy LLM assistance, directed and reviewed by me against real
+Produced with LLM assistance, directed and reviewed by me against real
 scroll data. Every number here comes from a file in this repository.
 
 ## License
