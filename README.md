@@ -6,8 +6,9 @@ the First Letters prize. 1,935 cm² of surface in total.
 **340 produced, 84 inspected by eye.** None were discarded: the index says
 which ones were looked at and what the verdict was.
 
-They were made with the Vesuvius Challenge team's own tools — the spiral fitter
-and `vc_render_tifxyz` from villa — run over a grid of z windows. 
+They were fitted on the 9 µm scans (8.64 µm for PHerc0800 and PHerc0268), with
+the Vesuvius Challenge team's own tools — the spiral fitter and
+`vc_render_tifxyz` from villa — run over a grid of z windows. 
 
 Looking through the open data bucket on 1 September 2026, I found published
 surfaces for only one of the thirteen eligible scrolls (PHerc1447, four
