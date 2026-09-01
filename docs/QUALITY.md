@@ -12,10 +12,10 @@ Criterion, fixed in mid-August and unchanged since:
 - Fiber at 8.6-9.4 µm is a **wide band**, 70-150 px, not a thin streak.
 - What confirms a single sheet is the **weave**: a checker pattern, bands
   crossing in two directions.
-- **approve** — coherent weave over most of the panel.
-- **partial** — at least one continuous patch of weave, several cm², with the
+- **approve**: coherent weave over most of the panel.
+- **partial**: at least one continuous patch of weave, several cm², with the
   rest melting.
-- **reject** — no region follows the weave.
+- **reject**: no region follows the weave.
 - A hole does not reject. Melting does.
 
 Partial counts as usable because the prize asks for 10 letters inside a single
@@ -27,7 +27,7 @@ still several times the minimum.
 84 panels judged in two sittings on 31 August, sampled systematically across
 scrolls and wraps.
 
-53 usable (approve or partial), 31 reject — 63%.
+53 usable (approve or partial), 31 reject, 63%.
 
 Failure mode is uniform: every rejection is melting. No swirls, no lamination.
 Three of the partials melt along a diagonal, which suggests a preferred
@@ -51,12 +51,12 @@ leave the sheet. An independent measurement in August on PHerc1218 found CT
 coverage falling from 100% at w020 to 4% at w148.
 
 **Confirmation.** 44 previously unjudged w020 panels were then judged: 27
-approve, 5 partial, 12 reject — 73% usable, against a base rate of 55% across
+approve, 5 partial, 12 reject, 73% usable, against a base rate of 55% across
 all wraps. The prediction was 83% and the margin declared before judging was
 70-95%. Confirmed, at the low end.
 
 Within w020 the rate by scroll is PHerc0800 83%, PHerc0211 77%, PHerc0813 73%,
-PHerc0125 62% — all above base, and the spread between scrolls is smaller than
+PHerc0125 62%, all above base, and the spread between scrolls is smaller than
 the spread between wraps.
 
 ## A test that failed its own criterion
@@ -73,7 +73,7 @@ by its own rule.**
 
 Unsealing the key showed why: the low-count group was almost all w020 and the
 high-count group almost all w080/w100. Component count was not measuring mesh
-quality — it was measuring distance from the umbilicus. Outer windings have
+quality, it was measuring distance from the umbilicus. Outer windings have
 more area, hence more components.
 
 The wrap effect is the simpler explanation, and it is known before any
@@ -86,7 +86,7 @@ processing. That is why it is the one reported here.
   only for the metric test above).
 - The criterion is a comparison against one reference panel. It is written
   down so it can be disputed.
-- The panel header reads "PHerc1447" — an inherited hard-coded label, ignore it.
+- The panel header reads "PHerc1447", an inherited hard-coded label, ignore it.
 - Per-cell counts in the wrap table are small: 12 panels at w020, 4 at w040.
   The monotonicity across five levels is what carries the claim, not any single
   cell.

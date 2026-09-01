@@ -23,8 +23,8 @@ one mesh per winding -> render -> ink inference -> physical vetoes.
 
 ## Window geometry
 
-Each window is the umbilicus median plus an offset, ±400 slices — 800 voxels,
-about 7.5 mm of height — aligned to 16. Offsets are drawn without replacement
+Each window is the umbilicus median plus an offset, ±400 slices, 800 voxels,
+about 7.5 mm of height, aligned to 16. Offsets are drawn without replacement
 from a grid of multiples of 600 up to ±6000.
 
 Success markers for a fit: `winding range [0, N)` with N > 0, step 0 with
@@ -47,7 +47,7 @@ costs little.
 Inference with the published 9 µm checkpoint `hybrid_3d2d-seed43/step-060000`,
 band 7-24 of the 31 slices, `--direction both`. Then physical vetoes at
 threshold 0.60 (0.30 saturates at about 92% of the valid area), minimum
-component area 300 px, and a valid mask eroded by 40 px — that erosion kills
+component area 300 px, and a valid mask eroded by 40 px, that erosion kills
 the strip-edge artifact, which was the first false-positive mode we catalogued.
 
 Both polarities are screened, dark and light. Ink polarity is not fixed: it
@@ -63,5 +63,5 @@ for both directions and both polarities.
 `area_vx2` in each mesh's `meta.json` is in squared voxels. Converted with
 8.64 µm for PHerc0800 and PHerc0268, 9.362 µm for the rest.
 
-VC3D shows `-1.000` in its area column for these meshes — it reads a different
+VC3D shows `-1.000` in its area column for these meshes, it reads a different
 field. The number is in the metadata and in `index.csv`.

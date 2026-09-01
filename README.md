@@ -6,9 +6,9 @@ the First Letters prize. 1,935 cm² of surface in total.
 **340 produced, 84 inspected by eye.** None were discarded: the index says
 which ones were looked at and what the verdict was.
 
-They were fitted on the 9 µm scans (8.64 µm for PHerc0800 and PHerc0268), with
-the Vesuvius Challenge team's own tools — the spiral fitter and
-`vc_render_tifxyz` from villa — run over a grid of z windows. 
+They were fitted on the 9 µm scans (8.64 µm for PHerc0800 and PHerc0268), using
+the Vesuvius Challenge team's own tools: the spiral fitter and
+`vc_render_tifxyz` from villa, run over a grid of z windows. 
 
 Looking through the open data bucket on 1 September 2026, I found published
 surfaces for only one of the thirteen eligible scrolls (PHerc1447, four
@@ -43,7 +43,7 @@ dark and light polarity), and the eye verdict where one exists.
 
 ## How to use them
 
-**Render a surface volume** — the meshes are plain tifxyz, so `vc_render_tifxyz`
+**Render a surface volume**, the meshes are plain tifxyz, so `vc_render_tifxyz`
 takes them directly:
 
 ```
@@ -54,7 +54,7 @@ vc_render_tifxyz \
   --zarr-output out.zarr
 ```
 
-**Open one in VC3D** — VC3D wants a project, so `volpkg_template/` has the
+**Open one in VC3D**, VC3D wants a project, so `volpkg_template/` has the
 structure ready. Copy a mesh into `paths/`, then:
 
 1. `File → Open Project...`, pick the folder; VC3D offers to convert it to
@@ -104,7 +104,7 @@ whole reasoning, including a blind test that failed its own criterion, is in
 ## How they were made
 
 The team's spiral fitter in its minimal configuration: umbilicus plus lasagna,
-no patches, no winding constraints — the route available for eligible scrolls
+no patches, no winding constraints. This is the route available for eligible scrolls
 that have no annotation pack. Then flatten, then one mesh per winding, then
 `vc_render_tifxyz`.
 

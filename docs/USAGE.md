@@ -46,7 +46,7 @@ volpkg_template/
 1. Copy a mesh into `paths/`, e.g.
    `paths/0800_z14672_w020/{x,y,z}.tif` plus `meta.json`.
 2. `File -> Open Project...` and select `volpkg_template`. VC3D will say it
-   needs converting to `.volpkg.json` — accept, and pick where to save it.
+   needs converting to `.volpkg.json`, accept, and pick where to save it.
 3. `File -> Attach Remote Zarr...` and paste the scroll's volume URL.
 4. In the Volume Package panel, select the volume in the `Volume` dropdown.
    The mesh appears in the surface list; click it.
@@ -54,7 +54,7 @@ volpkg_template/
 The Surface view then renders the winding with CT texture, and the XY and YZ
 views show where it sits inside the scroll.
 
-Two things to expect. The area column reads `-1.000` — VC3D looks for a field
+Two things to expect. The area column reads `-1.000`, VC3D looks for a field
 we do not write; the area is in `data/index.csv`. And the first render pulls
 chunks over the network, so it takes a moment.
 
@@ -62,15 +62,15 @@ chunks over the network, so it takes a moment.
 
 `data/index.csv`, one row per mesh:
 
-- `scroll`, `window_z`, `wrap` — identity
-- `area_cm2` — from `area_vx2` in the mesh metadata
-- `n_comp_fwd`, `n_comp_rev` — component counts from the ink screening run,
+- `scroll`, `window_z`, `wrap`, identity
+- `area_cm2`, from `area_vx2` in the mesh metadata
+- `n_comp_fwd`, `n_comp_rev`, component counts from the ink screening run,
   forward and reverse inference
-- `pitch_*_dark`, `pitch_*_light` — line-pitch p-value per direction and
+- `pitch_*_dark`, `pitch_*_light`, line-pitch p-value per direction and
   polarity
-- `gate_verdict` — `aprova`, `parcial`, `reprova`, or empty if not judged
-- `path` — where it came from
+- `gate_verdict`, `aprova`, `parcial`, `reprova`, or empty if not judged
+- `path`, where it came from
 
 The screening metrics are included because they are what we had; they are not
 a quality score. A blind test showed component count tracks the winding number,
-not mesh quality — see `QUALITY.md`.
+not mesh quality, see `QUALITY.md`.
