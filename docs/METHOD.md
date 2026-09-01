@@ -1,5 +1,10 @@
 # Method
 
+Everything here runs on the Vesuvius Challenge team's own software: the spiral
+fitter, the lasagna flattening step and `vc_render_tifxyz`, all from the villa
+repository, unmodified. This document records the configuration and the window
+geometry, so the same route can be run on other scrolls.
+
 ## The route
 
 Minimal spiral fit: umbilicus and lasagna only, no patches, no winding
@@ -15,24 +20,6 @@ radius/DT terms become inert zeros. Active constraints are the umbilicus
 
 Chain: pick a z window -> download that window's lasagna -> fit -> flatten ->
 one mesh per winding -> render -> ink inference -> physical vetoes.
-
-## Three corrections to the published material
-
-All three were verified in the code and against the bucket.
-
-**1. `lasagna_scale` is 4, not 2.** Groups 0 and 1 do not exist in the bucket;
-the published level is 2, at 1/4 of the volume. Measured on PHerc1218
-(23247/5812) and PHerc0125 (20840/5210). With 2, the fit raises a RuntimeError
-about an empty z-ROI.
-
-**2. The flag is `disable_patches`, not `input_disable_patches`.**
-`fit_spiral.py:206` defines `disable_patches`; `input_disable_patches` does not
-exist in the code. Passing the wrong name leaves patches enabled and the fit
-looks for supervision that is not there.
-
-**3. Tracks are required.** Without `tracks_<scroll>/`, the fit returns
-`winding range [0, 0)` — no windings. With them, it returns a real range. This
-was the root cause of early failures on PHerc0125.
 
 ## Window geometry
 

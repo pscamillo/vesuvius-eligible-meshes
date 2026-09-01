@@ -1,9 +1,14 @@
 # Surface meshes for eight prize-eligible scrolls
 
-340 tifxyz surface meshes from the minimal spiral-fit route, covering eight of
-the thirteen scrolls eligible for the First Letters prize. 1,935 cm² of
-surface in total. 84 of them have been inspected by eye and carry a quality
-verdict.
+340 tifxyz surface meshes covering eight of the thirteen scrolls eligible for
+the First Letters prize. 1,935 cm² of surface in total.
+
+**340 produced, 84 inspected by eye.** None were discarded: the index says
+which ones were looked at and what the verdict was.
+
+They were made with the Vesuvius Challenge team's own tools — the spiral fitter
+and `vc_render_tifxyz` from villa — run over a grid of z windows. Nothing here
+is a new method; what is new is the coverage.
 
 As of 1 September 2026, twelve of the thirteen eligible scrolls have no
 published surface at all in the open data bucket. Only PHerc1447 does, with
@@ -57,8 +62,7 @@ views track it. Details in `docs/USAGE.md`.
 
 ## Quality
 
-The meshes were produced automatically and are not curated. 84 were inspected
-against a fiber-weave reference; 63% of those show usable weave over most or
+84 of the 340 were inspected against a fiber-weave reference; 63% of those show usable weave over most or
 part of the panel, and 37% melt.
 
 Quality depends strongly on how far the winding sits from the umbilicus:
@@ -93,17 +97,17 @@ whole reasoning, including a blind test that failed its own criterion, is in
 
 ## How they were made
 
-Minimal spiral fit: umbilicus plus lasagna, no patches, no winding
-constraints — the route available for eligible scrolls with no annotation
-pack. Then flatten, then one mesh per winding.
+The team's spiral fitter in its minimal configuration: umbilicus plus lasagna,
+no patches, no winding constraints — the route available for eligible scrolls
+that have no annotation pack. Then flatten, then one mesh per winding, then
+`vc_render_tifxyz`.
 
-The recipe corrects three things that the published material gets wrong for
-this route. They are written down in `docs/METHOD.md`, with the reason for
-each.
+All of it is villa code, unmodified. `docs/METHOD.md` has the window geometry
+and the settings used, for anyone who wants to run the same route elsewhere.
 
 ## Limits
 
-- Not curated. 256 of the 340 have no eye verdict.
+- 256 of the 340 have no eye verdict.
 - Eight scrolls, not thirteen. The remaining five had no validated minimal-route
   geometry when this was assembled.
 - The verdict is one person's visual judgement against a reference panel, not a
