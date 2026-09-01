@@ -14,6 +14,11 @@ surfaces for only one of the thirteen eligible scrolls (PHerc1447, four
 segments). I may well have missed some. If that reading is roughly right, there
 is a gap here, and this is an attempt to fill part of it.
 
+This is meant as a stopgap. Several projects in the community are working on
+automated meshing at a scale and speed this cannot match, and when one of them
+reaches the eligible scrolls the gap should close properly. Until then, these
+are surfaces that exist and can be rendered today.
+
 ## What is here
 
 | scroll | meshes | inspected |
