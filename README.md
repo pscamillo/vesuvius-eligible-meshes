@@ -21,6 +21,7 @@ reaches the eligible scrolls the gap should close properly. Until then, these
 are surfaces that can be rendered today.
 
 <img width="2557" height="1394" alt="Captura de tela de 2026-09-01 10-13-35" src="https://github.com/user-attachments/assets/718f88ee-da63-4e1b-8ed7-1a939ca38276" />
+
 *PHerc0800, z14672, w020, open in VC3D with the volume attached from the bucket.*
 
 ## What is here
