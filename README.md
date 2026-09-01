@@ -43,7 +43,7 @@ dark and light polarity), and the eye verdict where one exists.
 
 ## How to use them
 
-**Render a surface volume**, the meshes are plain tifxyz, so `vc_render_tifxyz`
+**Render a surface volume.** The meshes are plain tifxyz, so `vc_render_tifxyz`
 takes them directly:
 
 ```
@@ -54,7 +54,7 @@ vc_render_tifxyz \
   --zarr-output out.zarr
 ```
 
-**Open one in VC3D**, VC3D wants a project, so `volpkg_template/` has the
+**Open one in VC3D.** It wants a project, so `volpkg_template/` has the
 structure ready. Copy a mesh into `paths/`, then:
 
 1. `File → Open Project...`, pick the folder; VC3D offers to convert it to
