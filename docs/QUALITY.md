@@ -90,3 +90,28 @@ processing. That is why it is the one reported here.
 - Per-cell counts in the wrap table are small: 12 panels at w020, 4 at w040.
   The monotonicity across five levels is what carries the claim, not any single
   cell.
+## Positional precision (measured 8–9 September 2026)
+
+The eye verdict was made on renders 31 slices deep, so it says whether a mesh
+follows the sheet well enough to show weave in a ±15-voxel band. It does not
+say the mesh sits on the sheet to the voxel. That was measured separately on
+six approved meshes (three fixed, three drawn at random), sampling the CT along
+the local normal at 400 points per mesh and locating the nearest intensity
+peak within ±12 voxels:
+
+- peak within 2 voxels of the mesh: 38–46 % of points
+- peak within 5 voxels: 74–84 % of points
+- median offset −1 to 0 voxels; 90th percentile of |offset| 7 voxels
+
+A simple snap (move each point to its nearest CT peak, median-filtered 5×5)
+raises the within-2 fraction only to 46–61 %, because at 9 µm the sheet is a
+~10-voxel plateau with fibre texture rather than a peak, so the per-point
+peak itself jitters by several voxels.
+
+Practical reading: these meshes are within about 5 voxels of the sheet. That
+is fine for rendering a band and for detecting winding jumps, which is what
+the index metrics and the eye verdict cover. It is not enough to use them
+directly as voxel-accurate surface labels; a held-out surface test built from
+them would need a distance-tolerant metric (around 5 voxels) stated up
+front. Scripts and per-mesh numbers: `surface-holdout-eligible/` in the
+author's working tree, on request.
