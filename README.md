@@ -123,6 +123,9 @@ and the settings used, for anyone who wants to run the same route elsewhere.
 - The verdict is one person's visual judgement against a reference panel, not a
   measurement. The criterion is written down so you can disagree with it.
 - Meshes are one winding each, not grown segments. They are small.
+- Meshes sit within about 5 voxels of the sheet, not on it to the voxel (measured on
+  six approved meshes, see `docs/QUALITY.md`). Good for rendering a band; not usable
+  as voxel-accurate surface labels without refinement.
 
 ## AI assistance
 
