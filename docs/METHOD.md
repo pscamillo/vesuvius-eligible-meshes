@@ -37,10 +37,15 @@ known limits, marked and skipped.
 ## Render
 
 `vc_render_tifxyz --group-idx 0 --scale 1 --num-slices 31 --slice-step 1
---cache-gb 16`, with the volume cache cleared before every winding. The cache
+--cache-gb 16 --flip-normals`, with the volume cache cleared before every winding. The cache
 carried over between windings caused a failure on PHerc0800 whose cause we
 never isolated ("nothing found at path ''"); clearing per winding fixed it and
 costs little.
+
+`--flip-normals` gives the team's layer order (it reproduces the team's
+PHerc0800 surface volume). The screening run below was rendered without it,
+so its forward and reverse passes, and the `_fwd`/`_rev` columns in
+`data/index.csv`, are swapped relative to the team's convention.
 
 ## Ink screening (not part of this package, but it produced the metrics)
 
