@@ -132,6 +132,17 @@ and the settings used, for anyone who wants to run the same route elsewhere.
   six approved meshes, see `docs/QUALITY.md`). Good for rendering a band; not usable
   as voxel-accurate surface labels without refinement.
 
+## Related work
+
+[rodriguescarson/eligible-scroll-atlas](https://github.com/rodriguescarson/eligible-scroll-atlas)
+renders all 340 of these meshes in the team's surface-volume layout and hosts
+them at
+[eligible-scroll-atlas-renders](https://huggingface.co/datasets/rodriguescarson/eligible-scroll-atlas-renders).
+Two checks from it are worth reading alongside this package: the PHerc0800
+reproduction, which matches my ink maps at r = 0.99998 across 95 meshes, and
+[repro/orientation](https://github.com/rodriguescarson/eligible-scroll-atlas/tree/main/repro/orientation),
+which found the `_fwd`/`_rev` label swap noted in `docs/QUALITY.md`.
+
 ## AI assistance
 
 Produced with LLM assistance, directed and reviewed by me against real
