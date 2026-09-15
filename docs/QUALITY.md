@@ -90,6 +90,16 @@ processing. That is why it is the one reported here.
 - Per-cell counts in the wrap table are small: 12 panels at w020, 4 at w040.
   The monotonicity across five levels is what carries the claim, not any single
   cell.
+- The `_fwd`/`_rev` columns here and in `data/index.csv` are swapped relative
+  to the team's layer order: these renders did not pass `--flip-normals`, so
+  the column named `_rev` holds the forward pass in the team's convention. The
+  numbers are unaffected, only the labels. Found by rodriguescarson, who
+  reproduced all 95 PHerc0800 meshes at r = 0.99998 against his own run:
+  https://github.com/rodriguescarson/eligible-scroll-atlas/tree/main/repro/orientation
+- In the tifxyz meshes the sentinel for an invalid point is -1, not 0. Masking
+  with `!= 0` leaves those points in and drags any coordinate statistic toward
+  the corner of the volume.
+
 ## Positional precision (measured 8–9 September 2026)
 
 The eye verdict was made on renders 31 slices deep, so it says whether a mesh
