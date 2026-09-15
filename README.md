@@ -55,8 +55,13 @@ vc_render_tifxyz \
   --remote-url https://vesuvius-challenge-open-data.s3.us-east-1.amazonaws.com/PHerc0800/volumes/20250521135224-8.640um-1.2m-116keV-masked.zarr \
   --segmentation meshes/PHerc0800/z14672_w020 \
   --group-idx 0 --scale 1 --num-slices 31 --slice-step 1 --cache-gb 16 \
+  --flip-normals \
   --zarr-output out.zarr
 ```
+
+`--flip-normals` puts the layers in the team's order. It is the setting that
+reproduces the team's published PHerc0800 surface volume, so an ink model's
+forward pass means the same thing here as on the team's segments.
 
 **Open one in VC3D.** It wants a project, so `volpkg_template/` has the
 structure ready. Copy a mesh into `paths/`, then:

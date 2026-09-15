@@ -11,6 +11,7 @@ vc_render_tifxyz \
   --segmentation meshes/PHerc0800/z14672_w020 \
   --group-idx 0 --scale 1 \
   --num-slices 31 --slice-step 1 --cache-gb 16 \
+  --flip-normals \
   --zarr-output out.zarr
 ```
 
