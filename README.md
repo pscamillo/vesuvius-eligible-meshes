@@ -1,5 +1,10 @@
 # Surface meshes for eight prize-eligible scrolls
 
+> *Written on 1 September 2026, when thirteen scrolls were eligible. The list
+> has changed since: PHerc1447 was withdrawn on 24 September after letters were
+> found in it. See the [prize page](https://scrollprize.org/prizes) for the
+> current list.*
+
 340 tifxyz surface meshes covering eight of the thirteen scrolls eligible for
 the First Letters prize. 1,935 cm² of surface in total.
 
